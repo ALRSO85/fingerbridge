@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.7.11911.148 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FingerBridge.Abstractions", "src\FingerBridge.Abstractions\FingerBridge.Abstractions.csproj", "{A66B7A35-36A9-4F62-A3D9-64B8BB2E0B04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FingerBridge.Providers.Mock", "src\FingerBridge.Providers.Mock\FingerBridge.Providers.Mock.csproj", "{93B8A0CC-6EC2-4DC1-AEA1-A1C39F4593E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FingerBridge.Providers.FutronicFs80h", "src\FingerBridge.Providers.FutronicFs80h\FingerBridge.Providers.FutronicFs80h.csproj", "{3C2D6A75-E20E-4A35-9642-E940E3B67D81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FingerBridge.Providers.NitgenHamsterDx", "src\FingerBridge.Providers.NitgenHamsterDx\FingerBridge.Providers.NitgenHamsterDx.csproj", "{E2BD87F1-481E-44D4-A3B1-B24F6F92E25B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FingerBridge.WinFormsTester", "src\FingerBridge.WinFormsTester\FingerBridge.WinFormsTester.csproj", "{B6428A4A-0C0A-42ED-A93E-06B89AF3A9CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A66B7A35-36A9-4F62-A3D9-64B8BB2E0B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A66B7A35-36A9-4F62-A3D9-64B8BB2E0B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A66B7A35-36A9-4F62-A3D9-64B8BB2E0B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A66B7A35-36A9-4F62-A3D9-64B8BB2E0B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93B8A0CC-6EC2-4DC1-AEA1-A1C39F4593E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B8A0CC-6EC2-4DC1-AEA1-A1C39F4593E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B8A0CC-6EC2-4DC1-AEA1-A1C39F4593E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B8A0CC-6EC2-4DC1-AEA1-A1C39F4593E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2D6A75-E20E-4A35-9642-E940E3B67D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2D6A75-E20E-4A35-9642-E940E3B67D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2D6A75-E20E-4A35-9642-E940E3B67D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2D6A75-E20E-4A35-9642-E940E3B67D81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2BD87F1-481E-44D4-A3B1-B24F6F92E25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BD87F1-481E-44D4-A3B1-B24F6F92E25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2BD87F1-481E-44D4-A3B1-B24F6F92E25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2BD87F1-481E-44D4-A3B1-B24F6F92E25B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6428A4A-0C0A-42ED-A93E-06B89AF3A9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6428A4A-0C0A-42ED-A93E-06B89AF3A9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6428A4A-0C0A-42ED-A93E-06B89AF3A9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6428A4A-0C0A-42ED-A93E-06B89AF3A9CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4154AA3-7896-4907-AADB-91F3F23FBD2C}
+	EndGlobalSection
+EndGlobal

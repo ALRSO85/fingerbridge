@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C2D6A75-E20E-4A35-9642-E940E3B67D81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FingerBridge.Providers.FutronicFs80h</RootNamespace>
+    <AssemblyName>FingerBridge.Providers.FutronicFs80h</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ftrSDKHelper10">
+      <HintPath>..\..\lib\futronic\ftrSDKHelper10.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FutronicFs80hBiometricServiceFactory.cs" />
+    <Compile Include="FutronicFs80hFingerprintService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FingerBridge.Abstractions\FingerBridge.Abstractions.csproj">
+      <Project>{A66B7A35-36A9-4F62-A3D9-64B8BB2E0B04}</Project>
+      <Name>FingerBridge.Abstractions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\lib\futronic\*.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>if exist &quot;$(TargetPath)&quot; copy /Y &quot;$(TargetPath)&quot; &quot;$(SolutionDir)src\FingerBridge.WinFormsTester\bin\$(ConfigurationName)\&quot;
+if exist &quot;$(TargetDir)ftrSDKHelper10.dll&quot; copy /Y &quot;$(TargetDir)ftrSDKHelper10.dll&quot; &quot;$(SolutionDir)src\FingerBridge.WinFormsTester\bin\$(ConfigurationName)\&quot;
+if exist &quot;$(TargetDir)FTRAPI.dll&quot; copy /Y &quot;$(TargetDir)FTRAPI.dll&quot; &quot;$(SolutionDir)src\FingerBridge.WinFormsTester\bin\$(ConfigurationName)\&quot;
+if exist &quot;$(TargetDir)ftrScanAPI.dll&quot; copy /Y &quot;$(TargetDir)ftrScanAPI.dll&quot; &quot;$(SolutionDir)src\FingerBridge.WinFormsTester\bin\$(ConfigurationName)\&quot;</PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

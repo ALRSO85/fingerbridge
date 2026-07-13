@@ -1,0 +1,59 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+*.pdb
+*.opendb
+*.VC.db
+TestResults/
+
+# NuGet/packages
+packages/
+*.nupkg
+.nuget/
+
+# Runtime/vendor binaries - do not commit proprietary SDK files
+*.dll
+*.exe
+*.msi
+*.cab
+*.ocx
+*.sys
+*.lib
+*.pdb
+*.rar
+*.7z
+*.zip
+
+# SDK license/serial material
+*SERIAL*
+*Serial*
+*serial*
+*LICENSE_KEY*
+*license.key*
+*.lic
+
+# Keep placeholder docs in vendor folders
+!lib/**/README.md
+!lib/**/.gitkeep
+
+# Local test artifacts
+templates/
+*.fingerprint
+*.template
+*.fir
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
