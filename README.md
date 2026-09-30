@@ -29,6 +29,8 @@ O projeto tem como alvo o **.NET Framework 4.8**. Para os SDKs biométricos nati
 
 Os templates devem permanecer associados ao provider e ao formato que os geraram. Não se deve presumir compatibilidade entre fabricantes. Consulte as [orientações de segurança](Main/README.md#seguranca) antes de armazenar ou operar dados biométricos.
 
+Para relatar uma vulnerabilidade, use o canal privado descrito em [SECURITY.md](SECURITY.md).
+
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
