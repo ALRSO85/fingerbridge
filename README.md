@@ -31,4 +31,4 @@ Os templates devem permanecer associados ao provider e ao formato que os geraram
 
 ## Licença
 
-Este repositório ainda não declara uma licença.
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
