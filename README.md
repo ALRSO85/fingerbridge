@@ -2,6 +2,10 @@
 
 Camada de integração biométrica para aplicações Windows em **.NET Framework 4.8**. O projeto separa a aplicação consumidora dos SDKs dos fabricantes por meio de uma abstração comum e de providers independentes.
 
+## Autoria
+
+Projeto criado e mantido por [Alexandre Souza (@ALRSO85)](https://github.com/ALRSO85), conforme o histórico público de commits.
+
 ## O que o projeto oferece
 
 - Cadastro e validação biométrica 1:1 por uma interface comum (`IFingerprintService`).
