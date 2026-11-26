@@ -4,7 +4,7 @@ Camada de integração biométrica para aplicações Windows em **.NET Framework
 
 ## Autoria
 
-Projeto criado e mantido por [Alexandre Souza (@ALRSO85)](https://github.com/ALRSO85), conforme o histórico público de commits.
+Projeto criado e mantido por [Suzanna Souza (@ALRSO85)](https://github.com/ALRSO85).
 
 ## O que o projeto oferece
 
